@@ -1,0 +1,89 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h3>{{count}} Comments</h3>
+        </div>
+    </div>
+    <ul class="media-list" id="commentListContainer">
+        {{#each comments}}
+            <li class="media" data-comment-path="{{path}}">
+                <div class="media-left">
+                    <span class="glyphicon glyphicon-user comment-user" aria-hidden="true"></span>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">{{author}}
+                        <small>{{date}} <a href="#" class="comment-reply">Reply</a></small>
+                    </h4>
+                    <p>{{comment}}</p>
+                    {{#if edited}}
+                        <small>Comment edited by author.</small>
+                    {{/if}}
+                    {{#each replies}}
+                        <div class="media">
+                            <div class="media-left">
+                                <span class="glyphicon glyphicon-user comment-user" aria-hidden="true"></span>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">{{author}}
+                                    <small>{{date}} <a href="#" class="comment-reply">Reply</a></small>
+                                </h4>
+                                <p>{{comment}}</p>
+                            </div>
+                        </div>
+                    {{/each}}
+                </div>
+            </li>
+        {{/each}}
+    </ul>
+
+    <div class="row addcommentcontainer" id="addCommentContainer">
+        <div class="col-md-6">
+            <a href="#">Add Comment</a>
+        </div>
+    </div>
+    <div id="newCommentContainer">
+        <div class="row" id="commentForm">
+            <form method="POST" action="{{formaction}}">
+                <div class="col-md-6">
+                    <div class="well">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <h3>Post Comment</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="form-group">
+                                    <label>Name</label>
+                                    <input type="text" name="author" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="form-group">
+                                    <label>Comment</label>
+                                    <textarea class="form-control" name="comment"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="form-group">
+                                    {{include this path="recaptcha" resourceType="publick/components/foundation/recaptcha"}}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <input type="hidden" name="blogPath" value="{{blogPath}}">
+                                <input type="hidden" name="commentPath" id="commentPath">
+                                <button type="submit" class="btn btn-primary">Post</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

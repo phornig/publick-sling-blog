@@ -1,0 +1,19 @@
+{
+  "resourceType": "publick/pages/adminSecurePage",
+  "title": "reCAPTCHA configuration",
+  "home": "/admin",
+  "logout": "/admin/login",
+  "sidebar": {
+    "json": "modules/admin/sidebar/sidebar"
+  },
+  "mainContent": {
+    "sling:resourceType": "publick/components/foundation/parsys",
+    "components": {
+      "recaptchaConfig": {
+        "path": "components/recaptchaConfig",
+        "resourceType": "publick/components/admin/recaptchaConfig",
+        "json": "modules/admin/recaptchaConfig/recaptchaConfig"
+      }
+    }
+  }
+}

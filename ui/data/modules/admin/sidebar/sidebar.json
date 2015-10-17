@@ -1,0 +1,74 @@
+{
+  "create": {
+    "path": "/admin/edit",
+    "text": "Create new blog post!"
+  },
+  "links": [
+    "dashboard",
+    "edit",
+    "list",
+    "comments",
+    "assets",
+    "users",
+    "backups",
+    "configuration"
+  ],
+  "dashboard": {
+    "path": "/admin",
+    "icon": "dashboard",
+    "text": "Dashboard"
+  },
+  "edit": {
+    "path": "/admin/edit",
+    "text": "New Blog",
+    "icon": "pencil"
+  },
+  "list": {
+    "path": "/admin/list",
+    "icon": "list-alt",
+    "text": "Blog List"
+  },
+  "comments": {
+    "path": "/admin/comments",
+    "icon": "comments",
+    "text": "Comment List"
+  },
+  "assets": {
+    "path": "/admin/assets",
+    "icon": "image",
+    "text": "Assets"
+  },
+  "users": {
+    "path": "/admin/users",
+    "icon": "user",
+    "text": "Users"
+  },
+  "backups": {
+    "path": "/admin/backups",
+    "icon": "archive",
+    "text": "Backup/Restore"
+  },
+  "configuration": {
+    "path": "",
+    "icon": "wrench",
+    "text": "Configuration",
+    "links": {
+      "system": {
+        "path": "/admin/config/system",
+        "text": "System Settings"
+      },
+      "email": {
+        "path": "/admin/config/email",
+        "text": "email"
+      },
+      "recaptcha": {
+        "path": "/admin/config/recaptcha",
+        "text": "reCAPTCHA"
+      },
+      "akismet": {
+        "path": "/admin/config/akismet",
+        "text": "Akismet"
+      }
+    }
+  }
+}

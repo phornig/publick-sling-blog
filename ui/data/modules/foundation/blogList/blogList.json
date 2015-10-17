@@ -1,0 +1,9 @@
+{
+  "blogs": {
+    "post1": {
+      "path": "blogs/post1",
+      "resourceType": "publick/pages/blogPage",
+      "json": "pages/posts/post1"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+<div class="navbar-default sidebar" role="navigation">
+    <div class="sidebar-nav navbar-collapse">
+        <ul class="nav" id="side-menu">
+            <li class="sidebar-search">
+                <div class="input-group custom-search-form full-width">
+                    <a class="btn btn-primary btn-block" href="{{create.path}}" role="button">{{create.text}}</a>
+                </div>
+            </li>
+            {{#each links}}
+                {{include @../root path=this resourceType="publick/components/admin/sidebar/sidebarlink"}}
+            {{/each}}
+        </ul>
+    </div>
+</div>

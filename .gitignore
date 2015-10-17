@@ -4,15 +4,13 @@ RemoteSystemsTempFiles
 target
 .grunt
 .idea
+*.iml
 .classpath
 .project
 .settings
-bin
 .vlt
 .DS_Store
 .vlt-sync-config.properties
 .vlt-sync.log
 .brackets.json
 .metadata/
-ui/node_modules/
-ui/src/main/resources/jcr_root/etc/clientlibs/admin/js/admin.js

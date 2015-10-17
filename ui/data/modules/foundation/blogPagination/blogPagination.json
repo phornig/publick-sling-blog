@@ -1,0 +1,21 @@
+{
+  "visible": true,
+  "firstPage": true,
+  "previousPath": "",
+  "pages": [
+    {
+      "current": true,
+      "path": ""
+    },
+    {
+      "current": false,
+      "path": "#2"
+    },
+    {
+      "current": false,
+      "path": "#3"
+    }
+  ],
+  "lastPage": false,
+  "nextPath": "#2"
+}

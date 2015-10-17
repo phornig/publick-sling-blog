@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="page-header">
+                <a href="{{link.url}}">
+                    <h1>{{title}}
+                        <small>{{date.month}}/{{date.year}}</small>
+                    </h1>
+                </a>
+            </div>
+        </div>
+    </div>
+    {{#if image}}
+        <div class="row">
+            <div class="col-md-12">
+                <a href="{{link.url}}">
+                    <img src="{{image.relativePath}}" class="img-responsive center-block" alt="{{image.alt}}"
+                         title="{{title}}">
+                </a>
+            </div>
+        </div>
+    {{/if}}
+    <div class="row">
+        <div class="col-md-12">
+            {{{content}}}
+        </div>
+    </div>
+    <div class="row" data-sly-test="${blog.keywords}">
+        <div class="col-md-12">
+            <span class="glyphicon glyphicon-tags" aria-hidden="true"></span>&nbsp;
+            {{#each keywords}}
+                <span class="label label-default">{{this}}</span>
+            {{/each}}
+        </div>
+    </div>
+</div>

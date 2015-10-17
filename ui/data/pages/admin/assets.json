@@ -1,0 +1,19 @@
+{
+  "resourceType": "publick/pages/adminSecurePage",
+  "title": "Assets",
+  "home": "/admin",
+  "logout": "/admin/login",
+  "sidebar": {
+    "json": "modules/admin/sidebar/sidebar"
+  },
+  "mainContent": {
+    "resourceType": "publick/components/foundation/parsys",
+    "components": {
+      "assetList" : {
+        "path": "components/assetList",
+        "resourceType" : "publick/components/admin/assetList",
+        "json": "modules/admin/assetList/assetList"
+      }
+    }
+  }
+}

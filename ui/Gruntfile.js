@@ -1,48 +1,27 @@
 /*global module:false*/
-module.exports = function(grunt) {
+module.exports = function (grunt) {
   'use strict';
-  require('time-grunt')(grunt);
-  require('load-grunt-tasks')(grunt);
 
-  grunt.initConfig({
+  require('time-grunt')(grunt);
+  require('load-grunt-config')(grunt, {
     pkg: grunt.file.readJSON('package.json'),
     banner: '/*! <%= pkg.title || pkg.name %> - v<%= pkg.version %> - ' +
-      '<%= grunt.template.today("yyyy-mm-dd") %>\n' +
-      '<%= pkg.homepage ? "* " + pkg.homepage + "\\n" : "" %>' +
-      '* Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author.name %>;' +
-      ' Licensed <%= _.pluck(pkg.licenses, "type").join(", ") %> */\n',
-    conf: {
+    '<%= grunt.template.today("yyyy-mm-dd") %>\n' +
+    '<%= pkg.homepage ? "* " + pkg.homepage + "\\n" : "" %>' +
+    '* Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author.name %>;' +
+    ' Licensed <%= _.pluck(pkg.licenses, "type").join(", ") %> */\n',
+    init: true,
+    data: {
       name: 'publick-sling-blog',
-      dist: 'src/main/resources/jcr_root/etc/clientlibs/admin',
-      src: 'src/main/resources/jcr_root/etc/clientlibs/admin'
-    },
-    concat: {
-      'js': {
-        src: [
-          '<%=conf.dist%>/js/summernote-ext-slingasset.js',
-          '<%=conf.dist%>/js/logout.js',
-          '<%=conf.dist%>/js/richtext.js',
-          '<%=conf.dist%>/js/app.js',
-          '<%=conf.dist%>/js/keywordsController.js',
-          '<%=conf.dist%>/js/commentController.js',
-          '<%=conf.dist%>/js/assetsController.js',
-          '<%=conf.dist%>/js/settingsController.js',
-          '<%=conf.dist%>/js/userController.js',
-          '<%=conf.dist%>/js/userModalController.js',
-          '<%=conf.dist%>/js/formDataObjectFactory.js',
-          '<%=conf.dist%>/js/userService.js',
-          '<%=conf.dist%>/js/settingsService.js',
-          '<%=conf.dist%>/js/commentService.js',
-          '<%=conf.dist%>/js/commentModalController.js',
-          '<%=conf.dist%>/js/backupController.js',
-          '<%=conf.dist%>/js/backupService.js'
-        ],
-        dest: '<%=conf.src%>/js/admin.js'
-      }
+      dist: 'src/main/resources/jcr_root/etc/clientlibs/publick',
+      src: 'assets'
     }
   });
 
-  grunt.registerTask('build', [
-    'concat:js'
-  ]);
+  grunt.registerTask('default', ['clean', 'bowercopy', 'scss', 'js', 'jsonlint:models']);
+
+  grunt.registerTask('dev', ['default', 'express:dev', 'watch']);
+
+  grunt.registerTask('scss', ['scsslint', 'sass']);
+  grunt.registerTask('js', ['jscs', 'jshint', 'concat', 'uglify']);
 };

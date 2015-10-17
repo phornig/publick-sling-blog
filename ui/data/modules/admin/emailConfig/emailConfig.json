@@ -1,0 +1,10 @@
+{
+  "authorable": true,
+  "formaction": "",
+  "smtpUsername": "",
+  "smtpPassword": "",
+  "sender": "",
+  "recipient": "",
+  "host": "",
+  "port": 25
+}

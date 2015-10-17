@@ -1,0 +1,15 @@
+{
+  "jcr:createdBy": "admin",
+  "jcr:created": "Tue Sep 08 2015 00:33:34 GMT+0000",
+  "jcr:primaryType": "sling:Folder",
+  "public-apache-sling-blog-engine-overview.jpg": {
+    "jcr:createdBy": "admin",
+    "jcr:created": "Wed Sep 09 2015 19:45:10 GMT+0000",
+    "jcr:primaryType": "nt:file"
+  },
+  "screen-shots-assets.png": {
+    "jcr:createdBy": "admin",
+    "jcr:created": "Wed Sep 09 2015 19:45:10 GMT+0000",
+    "jcr:primaryType": "nt:file"
+  }
+}

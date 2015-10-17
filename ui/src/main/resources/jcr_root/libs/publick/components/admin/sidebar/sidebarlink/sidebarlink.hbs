@@ -1,0 +1,12 @@
+<li class="sidebar-link">
+    <a href="{{path}}"><i class="fa fa-{{icon}} fa-fw"></i> {{text}}{{#if links}}<span class="fa arrow"></span>{{/if}}</a>
+    {{#if links}}
+        <ul class="nav nav-second-level">
+            {{#each links}}
+                <li>
+                    <a href="{{path}}"> {{text}}</a>
+                </li>
+            {{/each}}
+        </ul>
+    {{/if ~}}
+</li>

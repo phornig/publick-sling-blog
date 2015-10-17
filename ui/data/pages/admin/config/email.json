@@ -1,0 +1,19 @@
+{
+  "resourceType": "publick/pages/adminSecurePage",
+  "title": "Email configuration",
+  "home": "/admin",
+  "logout": "/admin/login",
+  "sidebar": {
+    "json": "modules/admin/sidebar/sidebar"
+  },
+  "mainContent": {
+    "sling:resourceType": "publick/components/foundation/parsys",
+    "components": {
+      "emailConfig": {
+        "path": "components/emailConfig",
+        "resourceType": "publick/components/admin/emailConfig",
+        "json": "modules/admin/emailConfig/emailConfig"
+      }
+    }
+  }
+}

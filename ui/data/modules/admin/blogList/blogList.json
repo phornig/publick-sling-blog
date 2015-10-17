@@ -1,0 +1,22 @@
+{
+  "blogs": [
+    {
+      "path": "/posts/post1",
+      "editPath": "/admin/edit/post1",
+      "name": "Programmatically updating OSGi configurations in AEM and Sling",
+      "authorable": true
+    },
+    {
+      "path": "/posts/post1",
+      "editPath": "/admin/edit/post1",
+      "name": "Get the rendered HTML for an AEM resource, component or page",
+      "authorable": false
+    },
+    {
+      "path": "/posts/post1",
+      "editPath": "/admin/edit/post1",
+      "name": "Publick Apache Sling + Sightly blog engine",
+      "authorable": true
+    }
+  ]
+}

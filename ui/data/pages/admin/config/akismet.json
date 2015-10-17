@@ -1,0 +1,19 @@
+{
+  "resourceType": "publick/pages/adminSecurePage",
+  "title": "Akismet configuration",
+  "home": "/admin",
+  "logout": "/admin/login",
+  "sidebar": {
+    "json": "modules/admin/sidebar/sidebar"
+  },
+  "mainContent": {
+    "sling:resourceType": "publick/components/foundation/parsys",
+    "components": {
+      "akismetConfig": {
+        "path": "components/akismetConfig",
+        "resourceType": "publick/components/admin/akismetConfig",
+        "json": "modules/admin/akismetConfig/akismetConfig"
+      }
+    }
+  }
+}

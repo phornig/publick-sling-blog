@@ -1,0 +1,128 @@
+// blogList
+.table .column-small {
+  width: 50px;
+}
+
+// assetList
+.asset-thumbnail {
+  text-align: center;
+
+  img {
+    height: 90px;
+  }
+}
+
+.asset-folder {
+  cursor: pointer;
+
+  .fa {
+    color: $grey;
+    font-size: 50px;
+    margin-top: 40px;
+  }
+}
+
+.asset-upload {
+  border: dashed 1px $green;
+
+  .hover {
+    background: $green-light;
+  }
+
+  .hover-error {
+    background: $red;
+  }
+
+  .fa {
+    color: $green;
+    margin-top: 27px;
+  }
+}
+
+.breadcrumb li {
+  margin-right: 4px;
+}
+
+// blogEdit
+.keywords-add-container {
+  float: right;
+  margin-right: 14px;
+  margin-top: 4px;
+
+  i {
+    margin-left: 6px;
+  }
+}
+
+// bootstrap modal scroll
+.modal-dialog {
+  overflow-y: initial;
+}
+
+.modal-body.large {
+  height: 250px;
+  overflow-y: auto;
+}
+
+.modal-body .thumbnail {
+  cursor: pointer;
+
+  img {
+    height: 102px;
+  }
+}
+
+.full-width {
+  width: 100%;
+}
+
+// system config
+.apachesample .modal-body {
+  height: 60vh;
+}
+
+// summernote
+.note-toolbar {
+  margin-left: 0;
+}
+
+.glyphicon.disabled {
+  cursor: not-allowed;
+  filter: alpha(opacity=65);
+  opacity: .65;
+}
+
+.glyphicon.disabled:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+.disabled-container {
+  cursor: not-allowed;
+}
+
+.disabled-container a,
+.disabled-container img {
+  cursor: not-allowed;
+  filter: alpha(opacity=65);
+  opacity: .65;
+}
+
+.clear {
+  clear: both;
+}
+
+//sb-admin-2
+.sidebar ul li {
+  a {
+    &.active.btn-primary {
+      background-color: $blue-dark;
+    }
+  }
+
+  &.sidebar-link a {
+    &.active {
+      background-color: $grey-light;
+    }
+  }
+}

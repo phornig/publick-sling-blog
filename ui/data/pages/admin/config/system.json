@@ -1,0 +1,19 @@
+{
+  "resourceType": "publick/pages/adminSecurePage",
+  "title": "System Settings",
+  "home": "/admin",
+  "logout": "/admin/login",
+  "sidebar": {
+    "json": "modules/admin/sidebar/sidebar"
+  },
+  "mainContent": {
+    "sling:resourceType": "publick/components/foundation/parsys",
+    "components": {
+      "systemConfig": {
+        "path": "components/systemConfig",
+        "resourceType": "publick/components/admin/systemConfig",
+        "json": "modules/admin/systemConfig/systemConfig"
+      }
+    }
+  }
+}

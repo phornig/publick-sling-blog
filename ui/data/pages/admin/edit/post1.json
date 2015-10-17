@@ -1,0 +1,19 @@
+{
+  "resourceType": "publick/pages/adminSecurePage",
+  "title": "Edit Blog",
+  "home": "admin",
+  "logout": "/admin/login",
+  "sidebar": {
+    "json": "modules/admin/sidebar/sidebar"
+  },
+  "mainContent": {
+    "resourceType": "publick/components/foundation/parsys",
+    "components": {
+      "blogEdit": {
+        "path": "components/blogEdit",
+        "resourceType": "publick/components/admin/blogEdit",
+        "json": "modules/admin/blogEdit/post1"
+      }
+    }
+  }
+}

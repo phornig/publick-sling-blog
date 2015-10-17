@@ -1,0 +1,29 @@
+{
+  "sling:resourceType": "sling/users",
+  "admin": {
+    "memberOf": [],
+    "declaredMemberOf": []
+  },
+  "anonymous": {
+    "memberOf": [],
+    "declaredMemberOf": []
+  },
+  "nateyolles": {
+    "memberOf": [
+      "/system/userManager/group/authors"
+    ],
+    "declaredMemberOf": [
+      "/system/userManager/group/authors"
+    ],
+    "displayName": "Nate Yolles"
+  },
+  "demo": {
+    "memberOf": [
+      "/system/userManager/group/testers"
+    ],
+    "declaredMemberOf": [
+      "/system/userManager/group/testers"
+    ],
+    "displayName": "Demo User"
+  }
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "size": "N/A",
+    "date": "2015-09-30 04:24:23",
+    "name": "after-first-blog-post",
+    "path": "/etc/packages/publick_backup/after-first-blog-post-1.0.zip",
+    "id": "publick_backup:after-first-blog-post:1.0"
+  },
+  {
+    "size": "N/A",
+    "date": "2015-10-09 06:28:53",
+    "name": "after-second-blog-post",
+    "path": "/etc/packages/publick_backup/after-second-blog-post-1.0.zip",
+    "id": "publick_backup:after-second-blog-post:1.0"
+  },
+  {
+    "size": "N/A",
+    "date": "2015-10-15 08:23:02",
+    "name": "after-third-blog-post",
+    "path": "/etc/packages/publick_backup/after-third-blog-post-1.0.zip",
+    "id": "publick_backup:after-third-blog-post:1.0"
+  }
+]

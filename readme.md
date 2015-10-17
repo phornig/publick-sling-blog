@@ -25,9 +25,14 @@ java -jar org.apache.sling.launchpad-7-standalone.jar
 
   1. Navigate to /ui bundle.
   2. Install [NodeJS and NPM](https://nodejs.org/)
-  3. Install [Grunt CLI](http://gruntjs.com/getting-started): `npm install -g grunt-cli`
-  4. Install Grunt plugins: `npm install`
-  5. Optional: Run Grunt: `grunt build`
+  3. Install [Ruby](https://www.ruby-lang.org)
+  4. Install Sass and scss-lint `gem install sass scss-lint`
+  5. Install [Grunt CLI](http://gruntjs.com/getting-started): `npm install -g grunt-cli`
+  6. Install Grunt plugins: `npm install`
+  7. Optional: Run Grunt: `grunt build`
+
+If you don't have Ruby and do not want to install it, you can replace the grunt-contrib-sass NPM package with grunt-sass,
+which uses the libsass implementation that does not support the latest sass features, and remove scss-lint from the build chain.
 
 ## Install Sightly
 

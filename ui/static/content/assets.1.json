@@ -1,0 +1,28 @@
+{
+  "jcr:created": "Tue Sep 08 2015 00:33:34 GMT+0000",
+  "jcr:mixinTypes": [
+    "rep:AccessControllable"
+  ],
+  "jcr:createdBy": "admin",
+  "jcr:primaryType": "sling:Folder",
+  "audio": {
+    "jcr:createdBy": "admin",
+    "jcr:created": "Tue Sep 08 2015 00:33:34 GMT+0000",
+    "jcr:primaryType": "sling:Folder"
+  },
+  "images": {
+    "jcr:createdBy": "admin",
+    "jcr:created": "Tue Sep 08 2015 00:33:34 GMT+0000",
+    "jcr:primaryType": "sling:Folder"
+  },
+  "pdf": {
+    "jcr:createdBy": "admin",
+    "jcr:created": "Tue Sep 08 2015 00:33:34 GMT+0000",
+    "jcr:primaryType": "sling:Folder"
+  },
+  "video": {
+    "jcr:createdBy": "admin",
+    "jcr:created": "Tue Sep 08 2015 00:33:34 GMT+0000",
+    "jcr:primaryType": "sling:Folder"
+  }
+}

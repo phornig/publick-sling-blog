@@ -1,0 +1,68 @@
+[
+  {
+    "comment": "Test1",
+    "id": "12r2wda",
+    "edited": true,
+    "replies": 0,
+    "spam": false,
+    "post": {
+      "text": "Publick Apache Sling + Sightly blog engine",
+      "link": "/posts/post1"
+    }
+  },
+  {
+    "comment": "Test2",
+    "id": "32wreys",
+    "edited": false,
+    "replies": 2,
+    "spam": false,
+    "post": {
+      "text": "Publick Apache Sling + Sightly blog engine",
+      "link": "/posts/post1"
+    }
+  },
+  {
+    "comment": "Reply1",
+    "id": "45wersdf",
+    "edited": true,
+    "replies": 1,
+    "spam": false,
+    "post": {
+      "text": "Publick Apache Sling + Sightly blog engine",
+      "link": "/posts/post1"
+    }
+  },
+  {
+    "comment": "Reply2",
+    "id": "235tfd",
+    "edited": false,
+    "replies": 0,
+    "spam": false,
+    "post": {
+      "text": "Publick Apache Sling + Sightly blog engine",
+      "link": "/posts/post1"
+    }
+  },
+  {
+    "comment": "Reply11",
+    "id": "6734efcc",
+    "edited": false,
+    "replies": 0,
+    "spam": false,
+    "post": {
+      "text": "Publick Apache Sling + Sightly blog engine",
+      "link": "/posts/post1"
+    }
+  },
+  {
+    "comment": "Test3",
+    "id": "457redxf",
+    "edited": false,
+    "replies": 0,
+    "spam": true,
+    "post": {
+      "text": "Publick Apache Sling + Sightly blog engine",
+      "link": "/posts/post1"
+    }
+  }
+]

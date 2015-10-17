@@ -1,0 +1,8 @@
+/node
+/node_modules
+/bower_components
+/.sass-cache
+/src/main/resources/apps/demo/assets
+/src/main/resources/jcr_root/etc/clientlibs/publick
+/assets/scss/vendor
+/logs

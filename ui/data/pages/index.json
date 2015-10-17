@@ -1,0 +1,19 @@
+{
+  "resourceType": "publick/pages/basicPage",
+  "title": "Blog List",
+  "mainContent": {
+    "resourceType": "publick/components/foundation/parsys",
+    "components": {
+      "blogList": {
+        "path": "components/blogList",
+        "resourceType": "publick/components/foundation/blogList",
+        "json": "modules/foundation/blogList/blogList"
+      },
+      "blogPagination": {
+        "path": "components/blogPagination",
+        "resourceType": "publick/components/foundation/blogPagination",
+        "json": "modules/foundation/blogPagination/blogPagination"
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "resourceType": "publick/pages/adminSecurePage",
+  "title": "Backups",
+  "home": "/admin",
+  "logout": "/admin/login",
+  "sidebar": {
+    "json": "modules/admin/sidebar/sidebar"
+  },
+  "mainContent": {
+    "resourceType": "publick/components/foundation/parsys",
+    "components": {
+      "backupList" : {
+        "path": "components/backupList",
+        "resourceType" : "publick/components/admin/backupList",
+        "json": "modules/admin/backupList/backupList"
+      }
+    }
+  }
+}

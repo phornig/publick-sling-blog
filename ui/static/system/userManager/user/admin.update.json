@@ -1,0 +1,7 @@
+{
+  "sling:resourceType": "sling/users",
+  "admin": {
+    "memberOf": [],
+    "declaredMemberOf": []
+  }
+}

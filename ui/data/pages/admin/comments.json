@@ -1,0 +1,19 @@
+{
+  "resourceType": "publick/pages/adminSecurePage",
+  "title": "Comment List",
+  "home": "/admin",
+  "logout": "/admin/login",
+  "sidebar": {
+    "json": "modules/admin/sidebar/sidebar"
+  },
+  "mainContent": {
+    "resourceType": "publick/components/foundation/parsys",
+    "components": {
+      "commentList": {
+        "path": "components/commentList",
+        "resourceType": "publick/components/admin/commentList",
+        "json": "modules/admin/commentList/commentList"
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "resourceType": "publick/pages/adminPage",
+  "title": "Login",
+  "mainContent": {
+    "resourceType": "publick/components/foundation/parsys",
+    "components": {
+      "login": {
+        "path": "components/login",
+        "resourceType": "publick/components/admin/login",
+        "json": "modules/admin/login/login"
+      }
+    }
+  }
+}

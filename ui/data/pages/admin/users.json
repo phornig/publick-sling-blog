@@ -1,0 +1,19 @@
+{
+  "resourceType": "publick/pages/adminSecurePage",
+  "title": "Users",
+  "home": "/admin",
+  "logout": "/admin/login",
+  "sidebar": {
+    "json": "modules/admin/sidebar/sidebar"
+  },
+  "mainContent": {
+    "resourceType": "publick/components/foundation/parsys",
+    "components": {
+      "userList": {
+        "path": "components/userList",
+        "resourceType": "publick/components/admin/userList",
+        "json": "modules/admin/userList/userList"
+      }
+    }
+  }
+}
